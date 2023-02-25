@@ -10,10 +10,10 @@ type JSONTime struct {
 }
 
 func GetCurrentTime() string {
-    currentTime := JSONTime{CURRENT_TIME: time.Now().Format(time.RFC3339)}
-    json_data, err := json.Marshal(currentTime)
-    if err != nil {
-        return "Something went wrong"
-    }
-    return string(json_data)
+	currentTime := JSONTime{CURRENT_TIME: time.Now().Format(time.RFC3339)}
+	json_data, err := json.Marshal(currentTime)
+	if err != nil {
+		return "Something went wrong"
+	}
+	return string(json_data)
 }

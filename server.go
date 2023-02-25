@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
- http.HandleFunc("/time", controllers.TimeController)
- http.ListenAndServe(":8795", nil)
+	http.HandleFunc("/time", controllers.TimeController)
+	http.ListenAndServe(":8795", nil)
 }
